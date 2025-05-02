@@ -8,6 +8,6 @@
 <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
 </form></div>
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?business=V4AQ5FUGX8PUW&no_recurring=1&currency_code=GBP)]]
+[![][paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?business=V4AQ5FUGX8PUW&no_recurring=1&currency_code=GBP)
 
 Collection of SimHub tools for LMU
