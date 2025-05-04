@@ -1,6 +1,6 @@
 [![](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/mogCorpLogo_300.png?raw=true)](https://www.paypal.com/donate/?business=V4AQ5FUGX8PUW&no_recurring=1&item_name=%27Persistent+Mediocrity+Since+Breakfast%27&currency_code=GBP)
 
-# MogCorp LMU Tools Bundle
+
 MogCorp has been proudly and consistently underperforming since around breakfast time.\
 \
 While great efforts are consistently made to maintain this low standard of productivity and development, 
@@ -11,10 +11,10 @@ who may find some of our products of use.\
 \
 Please consider donating so this project can continue to fail sideways.\
 \
-Mog (MogCorp CEO and keeper of the leaking fridge)
+Hestor MogWitt III (MogCorp CEO)
 
 
-## A Collection of SimHub tools for LMU
+# MogCorp LMU Tools Bundle
 The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.com/) dashboards for Le Mans Ultimate. The bundle contains the following modules:
 - MogCorp CornerMajig - a customisable realtime corner analysis tool
 - MogCorp StrategyAndTyresThingy - a customisable realtime tyre analysis tool and pit strategy calculator
@@ -25,7 +25,7 @@ The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.
 Download the latest release [here](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/releases/latest) and unzip it.
 
 ***IMPORTANT*** After unzipping make sure to copy the file Redadeg.lmuDataPlugin.dll to your SimHub installation root dir.
-Usually found at:```...\Program Files (x86)\SimHub\```
+Usually found at: ```...\Program Files (x86)\SimHub\```
 
 Once you have the plugin copied to the SimHub dir just double click each of the dasboards in the bundle to install them in SimHub.
 
@@ -46,7 +46,7 @@ A brake/throttle trace overlay that allows users to analyse per corner performan
 - [IMG]
 ----
 
-**SETTINGS:** CornerMajig has an editable settings file that allows users to chnage the functionality of the tool. The CornerMajig seetings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit:
+**SETTINGS:** CornerMajig has an editable settings file that allows users to chnage the functionality of the tool. The CornerMajig seetings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit. The default is shown here:
 ```yaml {
 {
   "background": {
@@ -57,7 +57,8 @@ A brake/throttle trace overlay that allows users to analyse per corner performan
     },
 
     "liveDisplayLayout": {
-      "description": "Use 'minSpeed', 'exitSpeed' OR 'brakeDistance' to outline how the live data display objects should be organised. There are 2 rows and any combination of the 3 available properties can be used.",
+      "description": "Use 'minSpeed', 'exitSpeed' OR 'brakeDistance' to outline how the live data display objects",
+      "description#": "There are 2 rows and any combination of the 3 available properties can be used.",
       "parameters": {
         "row_00": "minSpeed",
         "row_01": "brakeDistance"
