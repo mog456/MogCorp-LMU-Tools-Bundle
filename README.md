@@ -34,7 +34,7 @@ Usually found at: ```...\Program Files (x86)\SimHub\```
 
 Once you have the plugin copied to the SimHub dir just double click each of the dashboards in the bundle to install them in SimHub.
 
-Launch Simhub and make sure the Redadeg LMU Data plugin' is enabled by going to 'Add/Remove Features' and enabling it there. If you can't see the plugin in SimHub make sure you have copied the Redadeg.lmuDataPlugin.dll to your SimHub installation root dir. [IMG]
+Launch Simhub and make sure the 'Redadeg LMU Data plugin' is enabled by going to 'Add/Remove Features' and enabling it there. If you can't see the plugin in SimHub make sure you have copied the Redadeg.lmuDataPlugin.dll to your SimHub installation root dir. [IMG]
 
 You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to launch them from there. [IMG]
 
