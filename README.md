@@ -22,7 +22,7 @@ The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.
 - MogCorp SessionInfoMaBob - minimal session information display
 - [Redadeg plugin](https://github.com/tembob64/Redadeg.lmuDataPlugin) for SimHub (used to capture LMU telemetry)
 
-This bundle is menat to be modular; you can pick and choose which elements to use, either seperately or by combining elements into one Dash/overlay within SimHub. This was initially conceived as a means to produce a more functional overlay for our creaking leader, Hestor MogWright III: a VR user in LMU. More info on this process is outlined HERE [LINK]. Should these tools prove useful then MogCorp will continue development towards offering these resources via a SimHub plugin. So if you find it useful and want mores, you know what to do right?
+This bundle is menat to be modular; you can pick and choose which elements to use, either seperately or by combining elements into one Dash/overlay within SimHub. This was initially conceived as a means to produce a more functional overlay for our creaking leader, Hestor MogWitt III: a VR user in LMU. More info on this process is outlined HERE [LINK]. Should these tools prove useful then MogCorp will continue development towards offering these resources via a SimHub plugin. So if you find it useful and want mores, you know what to do right?
 
 # Download and Install
 Download the latest release [here](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/releases/latest) and unzip it.
