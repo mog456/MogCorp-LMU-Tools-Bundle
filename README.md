@@ -110,8 +110,32 @@ Its a tyre widgety thing that displays info about those tyres including:
 Displays stuff aboout the current session....
 
 # Extra Info
+## Create a modular Dash
+To create a modular (all in one) dash/overlay in SimHub using a selection of MogCorpLMU tools is quite straightforward but you will need to pay attention to the dir structure in SimHub and how any Javascript extensions and .json files associated with each MogCorp LMU tool are organised. Each tool is easy to copy and move into position within your own custom all in one Dash. If you don't get what I'm talking about when I say things like dir structure you may have some problems....
 
-To create a modular all in one type dash using these tools (e.g. for a pinnable VR Dash) see [LINK].
+So here are the steps I've used to create my opwn all in one VR Dash:
+- in SimHub 'create a new Dashboard' and give it a nmae.
+- Set your new Dashboard properties to the size you require (I used 1920 x 1080 for my full VR Dash).
+- Set the background of your Dash to transparent
+- Now open each element from the MogCorp LMU tools you want to add by finding the Dash in SimHub and clicking on 'More' then 'Edit Dash'. This will open the selected dash in a new tab in the dash editor.
+- Select the top most level of the MogCorp tool in the ditor and copy it.
+- Go back to your dash and just paste it in.
+- You can now drag the dash element wherever you want it on your dash.
+
+When copy/pasting CornerMajig OR StrategyThingy into your new dash you will have to move some files about and edit a few lines of code to get everything working. In SimHub links to extensions/.json files are relative so your new dash will not find the appropriate links until you move and edit them. So..
+- The new dash you just created will be in the dir at ``.../SimHub/DashTemplates/YOUR NEW DASH NAME``
+- the dir yuo need to focus on will be in that dir and named ``JavascriptExtensions``. In this dir you'll need to replicate the dir struture for the tool you want to include. I'd reccomend the following as a cover all:
+      ``.../SimHub/DashTemplates/YOUR NEW DASH NAME/JavascriptExtensions/Extras/Settings/``
+      ``../SimHub/DashTemplates/YOUR NEW DASH NAME/JavascriptExtensions/Extras/Data/``
+
+  Now we need to copy the files from the original dash to your new dash:
+- Copy CornerMajig js extension. Go to: ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/`` and copy ``MogCorpCornerMajig.js`` to ```YOUR NEW DASH/JavascriptExtensions```
+- Copy CornerMajig settings.json. Go to:  ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/`` and copy ``CornerMajig_settings.json`` to  ```YOUR NEW DASH/JavascriptExtensions/Extras/Settings```
+- Copy CornerMajig trackData.json. Go to: ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Data/`` and copy ``trackData.json`` to ```YOUR NEW DASH/JavascriptExtensions/Extras/Data```
+- Copy StrategyThingy js extension. Go to: ``.../SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/`` and copy ``MogCorpStrategyThimgy.js`` to ```YOUR NEW DASH/JavascriptExtensions```
+- Copy StrategyThingy_settings.json. Go to: ``.../SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/Extras/Settings/`` and copy ``StrategyThingy_settings.json`` to ```YOUR NEW DASH/JavascriptExtensions/Settings```
+
+By duplicating the original dir structure in your new dash structure you're almost reasy to go. The only thing left to do is edit the code for 
 
 # Acknowledgements
 
