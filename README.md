@@ -17,7 +17,8 @@ Hestor MogWitt III (MogCorp CEO)
 # MogCorp LMU Tools Bundle
 The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.com/) dashboards for Le Mans Ultimate. The bundle contains the following modules:
 - MogCorp CornerMajig - a customisable realtime corner analysis tool
-- MogCorp StrategyAndTyresThingy - a customisable realtime tyre analysis tool and pit strategy calculator
+- MogCorp StrategyThingy - a customisable realtime tyre analysis tool and pit strategy calculator
+- MogCorp TyreFrippery - a tyre info display widgety thing
 - MogCorp SessionInfoMaBob - minimal session information display
 - [Redadeg plugin](https://github.com/tembob64/Redadeg.lmuDataPlugin) for SimHub (used to capture LMU telemetry)
 
@@ -68,6 +69,52 @@ A brake/throttle trace overlay that allows users to analyse per corner performan
 ```
 
 Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the dash for the setting to take effect.
+
+*(There are a few other options in the settings file but they are mostly about debug display for those so inclined.)*
+
+**NOTE: For more info on the trackData.json and how to edit this file see this more detailed breakdown...[LINK]**
+
+# MogCorp StrategyThingy
+
+[IMG]
+----
+
+A live strategy display that tracks fuel/energy consumption over the previous 5 valid laps and suggests your next pit strategy. Display type (e.g. nrg/fuel etc) is automatically sel;ected by vehicle class. Main functionality includes:
+
+- Where remaining race time is more than current vehicle fuel/nrg capacity, output will return a 'full stint' strategy - e.g. 100% nrg/max fuel
+- Where remaining race time is within the max capacity of the vehicle, output will return an estimated nrg/fuel strat based on last 5 valid laps consumption
+- In cases where remaining race time is within the nrg/fuel capacity of the vehicle, output will also display live fuel/nrg, time and laps delta to race finish
+- Output displays a LED indicator that indicates the difference between your selected startegy (in game) and the estimated startegy, where GREEN = within 1.0 (units fuel/nrg%), RED = under estimate, ORANGE = over estimate.
+- Where race time remaining is within capcity of vehicle, the estimated strategy will also account for extra laps of nrg/fuel as defined in strategyThiny_settings.json (see below for setting details).
+- Output will also display a fuel/nrg warning (red background) indicator when current levels are below thresholds in settings.json.
+
+ The startegyThingy settings.json is located at ```../Program Files (x86)/SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/Extras/Settings/startegyThingy_settings.json```. Again, just change the values you want (e.g. extraLaps, fuel/nrg warning levels) and save it.
+
+# MogCorp TyreFrippery
+
+[IMG]
+----
+
+Its a tyre widgety thing that displays info about those tyres including:
+- Temperature (IMO and overall)
+- Wear (visual and numeric indicator)
+- Pressures
+
+# MogCorp SesionInfoMaBob
+
+[IMG]
+----
+
+Displays stuff aboout the current session....
+
+# Extra Info
+
+# Acknowledgements
+
+# ToDo
+
+# Contact
+
 
 
 
