@@ -117,6 +117,7 @@ So here are the steps I've used to create my opwn all in one VR Dash:
 - in SimHub 'create a new Dashboard' and give it a nmae.
 - Set your new Dashboard properties to the size you require (I used 1920 x 1080 for my full VR Dash).
 - Set the background of your Dash to transparent
+- EDITEDITEDITEDITEDITEDITEDITEDITEDIT
 - Now open each element from the MogCorp LMU tools you want to add by finding the Dash in SimHub and clicking on 'More' then 'Edit Dash'. This will open the selected dash in a new tab in the dash editor.
 - Select the top most level of the MogCorp tool in the ditor and copy it.
 - Go back to your dash and just paste it in.
@@ -124,24 +125,45 @@ So here are the steps I've used to create my opwn all in one VR Dash:
 
 When copy/pasting CornerMajig OR StrategyThingy into your new dash you will have to move some files about and edit a few lines of code to get everything working. In SimHub links to extensions/.json files are relative so your new dash will not find the appropriate links until you move and edit them. So..
 - The new dash you just created will be in the dir at ``.../SimHub/DashTemplates/YOUR NEW DASH NAME``
-- the dir yuo need to focus on will be in that dir and named ``JavascriptExtensions``. In this dir you'll need to replicate the dir struture for the tool you want to include. I'd reccomend the following as a cover all:
-      ``.../SimHub/DashTemplates/YOUR NEW DASH NAME/JavascriptExtensions/Extras/Settings/``
-      ``../SimHub/DashTemplates/YOUR NEW DASH NAME/JavascriptExtensions/Extras/Data/``
+- the dir you need to focus on will be in that dir and named ``JavascriptExtensions``. In this dir you'll need to dupe the relevant files from the MogCorp originals. You can follow my dir structure but its not absolutely necessary.
 
-  Now we need to copy the files from the original dash to your new dash:
-- Copy CornerMajig js extension. Go to: ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/`` and copy ``MogCorpCornerMajig.js`` to ```YOUR NEW DASH/JavascriptExtensions```
-- Copy CornerMajig settings.json. Go to:  ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/`` and copy ``CornerMajig_settings.json`` to  ```YOUR NEW DASH/JavascriptExtensions/Extras/Settings```
-- Copy CornerMajig trackData.json. Go to: ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Data/`` and copy ``trackData.json`` to ```YOUR NEW DASH/JavascriptExtensions/Extras/Data```
-- Copy StrategyThingy js extension. Go to: ``.../SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/`` and copy ``MogCorpStrategyThimgy.js`` to ```YOUR NEW DASH/JavascriptExtensions```
-- Copy StrategyThingy_settings.json. Go to: ``.../SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/Extras/Settings/`` and copy ``StrategyThingy_settings.json`` to ```YOUR NEW DASH/JavascriptExtensions/Settings```
+  Copy the .js extension files files from the original dash to your new dash (``.../SimHub/DashTemplates/YOUR NEW DASH NAME/JavascriptExtensions/``)
+- Copy CornerMajig js extension. ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/MogCorpCornerMajig.js``
+- Copy StrategyThingy js extension. ``.../SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/MogCorpStrategyThingy.js``
 
-By duplicating the original dir structure in your new dash structure you're almost reasy to go. The only thing left to do is edit the code for 
+  Next copy the settings/trackData json files to your dash dir. I've cerated a dir structure for convenience but as long as the files are under ``/Javascriptextensions` you'll be fine.
+- Copy CornerMajig settings.json. ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json``
+- Copy StrategyThingy_settings.json. ``.../SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/Extras/Settings/strategyThingy_settings.json`` 
+- Copy CornerMajig trackData.json. ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Data/trackData.json``
+
+Finally in order to get evrything hooked up you just need to edit ``JavascriptExtensions/MogCorpCornerMajig.js`` and ``JavascriptExtensions/MogCorpStrategyThimgy.js`` so the new .json paths resolve correctly:
+
+In ``JavascriptExtensions/MogCorpCornerMajig.js`` edit the lines as follows:
+
+```
+let settingsPath_CORNERS = './DashTemplates/YOUR NEW DASH NAME/JavascriptExtensions/PATH TO YOUR COPY OF cornerMajig_settings.json';
+let trackDataPath_CORNERS = './DashTemplates/Mogs LMU Dash_FULL/JavascriptExtensions/PATH TO YOUR COPY OF trackData.json';
+```
+
+Similarly in ``JavascriptExtensions/MogCorpStrategyThimgy.js`` edit the line:
+```
+let strategySettingsPath = './DashTemplates/Mogs LMU Dash_FULL/JavascriptExtensions/PATH TO YOUR COPY OF strategyThingy_settings.json';
+```
+
+*(If you're lost here I can help you I am able to offer help)*
+
+## A Note On trackData.json
+The MogCorp ConrnerMajig tool relies on the .json file trackData.json found at ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Data/trackData.json``. This file may come down to personal preference in terms of when a corner starts/ends. Editing this file (e.g. moving the 'start' of a corner backwards or moving the 'end' of a corner forward) can be doen at your own discretion. Similarly some corners have been amalgamated into one - e.g. turn 1 and 2 at Bahrain) this is purely my own preference and if you wish to edit tis file please feel free. What I would ask is that I am aware that some of the data contained here may be noticeably off. If you find this to be the case and you have edited the trackData please let me know so I can include any updated data in future releases.
+
+Also, this cornerMajig tool is potentially extensible (in terms of being adapted for aother sims) as it is only reliant on core SimHub telemetry data. If you have track data you wish to be included but is related to a sim other than LMU, again let me know as I'd be happy to incorporate it if you can provide me with the data (I have been using data from from MoTeC).
 
 # Acknowledgements
+Huge thanks to [Redadeg plugin](https://github.com/tembob64/Redadeg.lmuDataPlugin) for allowing me to use this plug in. Awesom.
+Our humble thanks also go out to all that have supported MogCorp over the last few years. Whether you realise it or not you have been a great help to us in the fumbling darkness. Especially everyone at [Bongo Racing]('https://www.youtube.com/@BongoRacing'). If you want to get in touch about this stuff you can reach me via the Discord you'll find at that link.
 
 # ToDo
-
-# Contact
+- If support for this project is forthcoming we will do away with much of the faffing when copying settings etc. and centralise everything in a SimHub plugin.
+- trackData.json only has the base LMU tracks at this point
 
 
 
