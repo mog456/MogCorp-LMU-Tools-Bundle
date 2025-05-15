@@ -22,6 +22,8 @@ The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.
 - MogCorp SessionInfoMaBob - minimal session information display
 - [Redadeg plugin](https://github.com/tembob64/Redadeg.lmuDataPlugin) for SimHub (used to capture LMU telemetry)
 
+This bundle is menat to be modular; you can pick and choose which elements to use, either seperately or by combining elements into one Dash/overlay within SimHub. This was initially conceived as a means to produce a more functional overlay for our creaking leader, Hestor MogWright III: a VR user in LMU. More info on this process is outlined HERE [LINK]. Should these tools prove useful then MogCorp will continue development towards offering these resources via a SimHub plugin. So if you find it useful and want mores, you know what to do right?
+
 # Download and Install
 Download the latest release [here](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/releases/latest) and unzip it.
 
@@ -33,8 +35,6 @@ Once you have the plugin copied to the SimHub dir just double click each of the 
 Launch Simhub and make sure the Redadeg LMU Data plugin' is enabled by going to 'Add/Remove Features' and enabling it there. If you can't see the plugin in SimHub make sure you have copied the Redadeg.lmuDataPlugin.dll to your SimHub installation root dir. [IMG]
 
 You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to launch them from there. [IMG]
-
-To create a modular all in one type dash using these tools (e.g. for a pinnable VR Dash) see [LINK].
 
 ----
 - ***TIP:*** *these tools are packaged as Simhub dashborads but can be enabled as overlays by clicking on the 'MORE' option on the right of the dashboard in SimHub and selecting 'Convert to overlay'. Doing this will create the overlay in the 'Overlays' Tab of SimHub.*
@@ -108,6 +108,8 @@ Its a tyre widgety thing that displays info about those tyres including:
 Displays stuff aboout the current session....
 
 # Extra Info
+
+To create a modular all in one type dash using these tools (e.g. for a pinnable VR Dash) see [LINK].
 
 # Acknowledgements
 
