@@ -58,7 +58,6 @@ Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the d
 **NOTE: For more info on the trackData.json and how to edit this file see this more detailed breakdown...[LINK]**
 
 # MogCorp StrategyThingy
-
 ![Strategy Thingy](img/StrategyThingy_01.png "StrategyThingy")
 
 A live strategy display that tracks fuel/energy consumption over the previous 5 valid laps and suggests your next pit strategy. Display type (e.g. nrg/fuel etc) is automatically selected by vehicle class. Main functionality includes:
@@ -73,9 +72,7 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
  The strategyThingy settings.json is located at ```../Program Files (x86)/SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/Extras/Settings/strategyThingy_settings.json```. Again, just change the values you want (e.g. extraLaps, fuel/nrg warning levels) and save it.
 
 # MogCorp TyreFrippery
-
-![Tyre Frippery](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/TyreFrippery_02.png "TyreFrippery")
-----
+![Tyre Frippery](img/TyreFrippery_02.png "TyreFrippery")
 
 Its a tyre widgety thing that displays info about those tyres including:
 - Temperature (IMO and overall)
@@ -83,7 +80,6 @@ Its a tyre widgety thing that displays info about those tyres including:
 - Pressures
 
 # MogCorp SessionInfoMaBob
-
 ![SessionInfoMaBob](img/SessionInfoMaBob_01.png "SessionInfoMaBob")
 
 Displays stuff about the current session....
@@ -94,17 +90,12 @@ To create a modular (all in one) dash/overlay in SimHub using a selection of Mog
 
 So here are the steps I've used to create my own all in one VR Dash:
 - in SimHub 'create a new Dashboard' and give it a name.
-- Set your new Dashboard properties to the size you require (I used 1920 x 1080 for my full VR Dash).
-  
-  ![SimHub Properties](img/propertiesSimHub.png "SimHub Porperties")
-  
+- Set your new Dashboard properties to the size you require in Dashboard/Dahboard Properties (I used 1920 x 1080 for my full VR Dash)
 - Set the background of your Dash to transparent (in Dashboard/Manage Screens)
-  
-  ![Set Transparency](img/transparency_02.png "set transparency")
-  
-- Now open each element from the MogCorp LMU tools you want to add by finding the Dash in SimHub and clicking on 'More' then 'Edit Dash'. This will open the selected dash in a new tab in the dash editor.
+ 
+Now open each element from the MogCorp LMU tools you want to add by finding the Dash in SimHub and clicking on 'More' then 'Edit dashboard'. This will open the selected dash in a new tab in the dash editor.
 - Select the top most level of the MogCorp tool in the editor and copy it.
-- Go back to your dash and just paste it in.
+- Go back to your dash (which should still be open in tis own tab in the dash editor) and just paste it in.
 - You can now drag the dash element wherever you want it on your dash.
 
 When copy/pasting CornerMajig OR StrategyThingy into your new dash you will have to move some files about and edit a few lines of code to get everything working. In SimHub links to extensions/.json files are relative so your new dash will not find the appropriate links until you move and edit them. So..
