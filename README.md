@@ -15,6 +15,7 @@ Hestor MogWitt III (MogCorp CEO)
 
 
 # MogCorp LMU Tools Bundle
+![MogCorp LMU Tools](img/elementsComp01png.png "MogCorp LMU Tools")
 The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.com/) dashboards for Le Mans Ultimate. The bundle contains the following modules:
 - MogCorp CornerMajig - a customisable realtime corner analysis tool
 - MogCorp StrategyThingy - a customisable realtime tyre analysis tool and pit strategy calculator
@@ -34,9 +35,11 @@ Usually found at: ```...\Program Files (x86)\SimHub\```
 
 Once you have the plugin copied to the SimHub dir just double click each of the dashboards in the bundle to install them in SimHub.
 
-Launch Simhub and make sure the 'Redadeg LMU Data plugin' is enabled by going to 'Add/Remove Features' and enabling it there. If you can't see the plugin in SimHub make sure you have copied the Redadeg.lmuDataPlugin.dll to your SimHub installation root dir. [IMG]
+Launch Simhub and make sure the 'Redadeg LMU Data plugin' is enabled by going to 'Add/Remove Features' and enabling it there. If you can't see the plugin in SimHub make sure you have copied the Redadeg.lmuDataPlugin.dll to your SimHub installation root dir. 
 
-You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to launch them from there. [IMG]
+![Enable PlugIn](img/enable%20redadeg.png "Enable Plugin")
+
+You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to launch them from there.
 
 ----
 - ***TIP:*** *These tools are packaged as SimHub dashboards but can be enabled as overlays by clicking on the 'MORE' option on the right of the dashboard in SimHub and selecting 'Convert to overlay'. Doing this will create the overlay in the 'Overlays' Tab of SimHub.*
@@ -45,9 +48,11 @@ You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to l
 # MogCorp CornerMajig
 A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
 
-----
-- [IMG]
-----
+<img src="img/CornerMajig_01.png" alt="CornerMajig" width="700;" />
+
+
+
+![CornerMajig Image](img/CornerMajig_01.png "CornerMajig")
 
 **SETTINGS:** CornerMajig has an editable settings file that allows users to change the functionality of the tool. The CornerMajig settings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit. The default is shown here:
 ```yaml
@@ -78,8 +83,7 @@ Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the d
 
 # MogCorp StrategyThingy
 
-[IMG]
-----
+<img src="img/StrategyThingy_01.png" alt="StrategyThingy" width="300;"/>
 
 A live strategy display that tracks fuel/energy consumption over the previous 5 valid laps and suggests your next pit strategy. Display type (e.g. nrg/fuel etc) is automatically selected by vehicle class. Main functionality includes:
 
@@ -94,7 +98,7 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
 
 # MogCorp TyreFrippery
 
-[IMG]
+![Tyre Frippery](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/TyreFrippery_02.png "TyreFrippery")
 ----
 
 Its a tyre widgety thing that displays info about those tyres including:
@@ -104,8 +108,7 @@ Its a tyre widgety thing that displays info about those tyres including:
 
 # MogCorp SessionInfoMaBob
 
-[IMG]
-----
+![SessionInfoMaBob](img/SessionInfoMaBob_01.png "SessionInfoMaBob")
 
 Displays stuff about the current session....
 
@@ -116,8 +119,13 @@ To create a modular (all in one) dash/overlay in SimHub using a selection of Mog
 So here are the steps I've used to create my own all in one VR Dash:
 - in SimHub 'create a new Dashboard' and give it a name.
 - Set your new Dashboard properties to the size you require (I used 1920 x 1080 for my full VR Dash).
-- Set the background of your Dash to transparent
-- EDITEDITEDITEDITEDITEDITEDITEDITEDIT
+  
+  ![SimHub Properties](img/propertiesSimHub.png "SimHub Porperties")
+  
+- Set the background of your Dash to transparent (in Dashboard/Manage Screens)
+  
+  ![Set Transparency](img/transparency_02.png "set transparency")
+  
 - Now open each element from the MogCorp LMU tools you want to add by finding the Dash in SimHub and clicking on 'More' then 'Edit Dash'. This will open the selected dash in a new tab in the dash editor.
 - Select the top most level of the MogCorp tool in the editor and copy it.
 - Go back to your dash and just paste it in.
@@ -159,6 +167,8 @@ let strategySettingsPath = './DashTemplates/Mogs LMU Dash_FULL/JavascriptExtensi
 
 ## A Note On trackData.json
 The MogCorp CornerMajig tool relies on the .json file trackData.json found at ``.../SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Data/trackData.json``. This file may come down to personal preference in terms of when a corner starts/ends. Editing this file (e.g. moving the 'start' of a corner backwards or moving the 'end' of a corner forward) can be done at your own discretion. Similarly some corners have been amalgamated into one - e.g. turn 1 and 2 at Bahrain) this is purely my own preference and if you wish to edit this file please feel free. What I would ask is that I am aware that some of the data contained here may be noticeably off. If you find this to be the case and you have edited the trackData please let me know so I can include any updated data in future releases.
+
+In terms of editing the trackData.json make sure there is no corner overlap (e.g. a corner start distance SHOULD NOT BE GREATER THAN the previous corners' end distance) *AND* make sure that each data element in corners[] has an individual cornerName. There is absolutely no need for the corners to named sequentially (1, 2, 3, etc). The names are strings so you can call them what you want **AS LONG AS** each cornerName is unique.
 
 Also, this cornerMajig tool is potentially extensible (in terms of being adapted for other sims) as it is only reliant on core SimHub telemetry data. If you have track data you wish to be included but is related to a sim other than LMU, again let me know as I'd be happy to incorporate it if you can provide me with the data (I have been using data from MoTeC).
 
