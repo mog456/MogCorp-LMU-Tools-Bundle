@@ -15,8 +15,9 @@ Hestor MogWitt III (MogCorp CEO)
 
 
 # MogCorp LMU Tools Bundle
+The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.com/) dashboards for Le Mans Ultimate.
 ![MogCorp LMU Tools](img/elementsComp01png.png "MogCorp LMU Tools")
-The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.com/) dashboards for Le Mans Ultimate. The bundle contains the following modules:
+The bundle contains the following modules:
 - MogCorp CornerMajig - a customisable realtime corner analysis tool
 - MogCorp StrategyThingy - a customisable realtime tyre analysis tool and pit strategy calculator
 - MogCorp TyreFrippery - a tyre info display widgety thing
