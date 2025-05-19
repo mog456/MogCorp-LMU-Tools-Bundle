@@ -47,33 +47,9 @@ You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to l
 
 # MogCorp CornerMajig
 A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
-
-<img src="img/CornerMajig_01.png" alt="CornerMajig" width="700;" />
-
-
-
 ![CornerMajig Image](img/CornerMajig_01.png "CornerMajig")
 
-**SETTINGS:** CornerMajig has an editable settings file that allows users to change the functionality of the tool. The CornerMajig settings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit. The default is shown here:
-```yaml
-{
-  "background": {
-      "description": "Set the transparency of the dash background (0.00 - 1.00), where 1.00 is fully opaque",
-      "parameters": {
-        "transparency": 0.5
-      }
-    },
-
-    "liveDisplayLayout": {
-      "description": "Use 'minSpeed', 'exitSpeed' OR 'brakeDistance' to outline how the live data display objects",
-      "description#": "There are 2 rows and any combination of the 3 available properties can be used.",
-      "parameters": {
-        "row_00": "minSpeed",
-        "row_01": "brakeDistance"
-      }
-    }
-}
-```
+**SETTINGS:** CornerMajig has an editable settings file that allows users to change the functionality of the tool. The CornerMajig settings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit.
 
 Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the dash for the setting to take effect.
 
@@ -83,7 +59,7 @@ Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the d
 
 # MogCorp StrategyThingy
 
-<img src="img/StrategyThingy_01.png" alt="StrategyThingy" width="300;"/>
+![Strategy Thingy](img/StrategyThingy_01.png "StrategyThingy")
 
 A live strategy display that tracks fuel/energy consumption over the previous 5 valid laps and suggests your next pit strategy. Display type (e.g. nrg/fuel etc) is automatically selected by vehicle class. Main functionality includes:
 
