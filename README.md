@@ -58,7 +58,7 @@ Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the d
 **NOTE: For more info on the trackData.json and how to edit this file see this more detailed breakdown...[LINK]**
 
 # MogCorp StrategyThingy
-![Strategy Thingy](img/StrategyThingy_01.png "StrategyThingy")
+![Strategy Thingy](img/strategyComp.png "StrategyThingy")
 
 A live strategy display that tracks fuel/energy consumption over the previous 5 valid laps and suggests your next pit strategy. Display type (e.g. nrg/fuel etc) is automatically selected by vehicle class. Main functionality includes:
 
