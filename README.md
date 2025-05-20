@@ -1,7 +1,7 @@
 [![](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/mogCorpLogo_1024.png?raw=true)](https://www.paypal.com/donate/?business=V4AQ5FUGX8PUW&no_recurring=1&item_name=%27...Persistent+Mediocrity+Since+Breakfast...%27%0A&currency_code=GBP)
 
 # MogCorp LMU Tools Bundle
-![MogCorp LMU Tools](img/elementsComp03.png "MogCorp LMU Tools")
+![MogCorp LMU Tools](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/elementsComp03.png "MogCorp LMU Tools")
 
 The MogCorp LMU Tools Bundle is a collection of [SimHub](https://www.simhubdash.com/) tools for Le Mans Ultimate. This Dash is presented in a minimalist format and it is recommended that users edit this minimalist layout to suit their needs. The bundle contains the following modules:
 - MogCorp CornerMajig - a customisable realtime corner analysis tool
