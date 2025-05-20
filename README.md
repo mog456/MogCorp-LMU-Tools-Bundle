@@ -46,18 +46,6 @@ You should now see the dashboards in SimHub's 'Dash Studio' tab and be able to l
 - ***TIP:*** *These tools are packaged as SimHub dashboards but can be enabled as overlays by clicking on the 'MORE' option on the right of the dashboard in SimHub and selecting 'Convert to overlay'. Doing this will create the overlay in the 'Overlays' Tab of SimHub.*
 ----
 
-# MogCorp CornerMajig
-A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
-![CornerMajig Image](img/CornerMajig_01.png "CornerMajig")
-
-**SETTINGS:** CornerMajig has an editable settings file that allows users to change the functionality of the tool. The CornerMajig settings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit.
-
-Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the dash for the setting to take effect.
-
-*(There are a few other options in the settings file but they are mostly about debug display for those so inclined.)*
-
-**NOTE: For more info on the trackData.json and how to edit this file see this more detailed breakdown...[LINK]**
-
 # MogCorp StrategyThingy
 ![Strategy Thingy](img/strategyComp.png "StrategyThingy")
 
@@ -71,6 +59,18 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
 - Output will also display a fuel/nrg warning (red background) indicator when current levels are below thresholds in settings.json.
 
  The strategyThingy settings.json is located at ```../Program Files (x86)/SimHub/DashTemplates/MogCorp StrategyThingy/JavascriptExtensions/Extras/Settings/strategyThingy_settings.json```. Again, just change the values you want (e.g. extraLaps, fuel/nrg warning levels) and save it.
+
+ # MogCorp CornerMajig
+A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
+![CornerMajig Image](img/cornerMajig_ScreenShot.png "CornerMajig")
+
+**SETTINGS:** CornerMajig has an editable settings file that allows users to change the functionality of the tool. The CornerMajig settings can be found at: ```../Program Files (x86)/SimHub/DashTemplates/MogCorp CornerMajig/JavascriptExtensions/Extras/Settings/cornerMajig_settings.json```. Just open that JSON up in a text editor and alter the settings to suit.
+
+Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the dash for the setting to take effect.
+
+*(There are a few other options in the settings file but they are mostly about debug display for those so inclined.)*
+
+**NOTE: For more info on the trackData.json and how to edit this file see this more detailed breakdown...[LINK]**
 
 # MogCorp TyreFrippery
 ![Tyre Frippery](img/TyreFrippery_02.png "TyreFrippery")
