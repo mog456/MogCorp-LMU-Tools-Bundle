@@ -44,14 +44,14 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
 - Where race time remaining is within capacity of vehicle, the estimated strategy will also account for extra laps of nrg/fuel as defined in `MogCorpTools__settings.json`.
 - Output will also display a fuel/nrg warning (red background) indicator when current levels are below thresholds in `MogCorpTools__settings.json`.
 
-**(For details on editing the settings.json see [thsi more dtailed breakdown](##a-modular-dash))**
+***(For details on editing the settings.json see [thsi more detailed breakdown](#a-modular-dash))***
 
  # MogCorp CornerMajig
 A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
 ![CornerMajig Image](img/cornerMajig_ScreenShot.png "CornerMajig")
 
 
-**NOTE: For more info on the trackData.json and how to edit this file see [this more detailed breakdown...](#a-note-on-trackdatajson)**
+***NOTE: For more info on the trackData.json and how to edit this file see [this more detailed breakdown...](#a-note-on-trackdatajson)***
 
 # MogCorp TyreFrippery
 ![Tyre Frippery](img/TyreFrippery_02.png "TyreFrippery")
