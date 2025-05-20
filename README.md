@@ -67,7 +67,8 @@ Its a tyre widgety thing that displays info about those tyres including:
 Displays stuff about the current session....
 
 # Extra Info
-## Settings.json: This bundle contains  an editable settings file that allows users to change the functionality of the tool. The settings can be found at: `../Program Files (x86)/SimHub/DashTemplates/MogCorp LMU Tools Bundle/JavascriptExtensions/Extras/Settings/MogCorpTools_settings.json`.
+## Settings.json
+This bundle contains  an editable settings file that allows users to change the functionality of the tool. The settings can be found at: `../Program Files (x86)/SimHub/DashTemplates/MogCorp LMU Tools Bundle/JavascriptExtensions/Extras/Settings/MogCorpTools_settings.json`.
 
 These settings are all explained in the file itself so should be easy to grasp. Note you can enable/disable display of any of the dash elements in 'setElementsDisplayVisibility' to true/false.
 
