@@ -44,7 +44,7 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
 - Where race time remaining is within capacity of vehicle, the estimated strategy will also account for extra laps of nrg/fuel as defined in `MogCorpTools__settings.json`.
 - Output will also display a fuel/nrg warning (red background) indicator when current levels are below thresholds in `MogCorpTools__settings.json`.
 
-***(For details on editing the settings.json see [this more detailed breakdown](#a-modular-dash))***
+***(For details on editing the settings.json see [this more detailed breakdown](#settings.json))***
 
  # MogCorp CornerMajig
 A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
@@ -67,15 +67,14 @@ Its a tyre widgety thing that displays info about those tyres including:
 Displays stuff about the current session....
 
 # Extra Info
-## A modular Dash
-**SETTINGS:** This bundle contains  an editable settings file that allows users to change the functionality of the tool. The settings can be found at: `../Program Files (x86)/SimHub/DashTemplates/MogCorp LMU Tools Bundle/JavascriptExtensions/Extras/Settings/MogCorpTools_settings.json`.
+## Settings.json: This bundle contains  an editable settings file that allows users to change the functionality of the tool. The settings can be found at: `../Program Files (x86)/SimHub/DashTemplates/MogCorp LMU Tools Bundle/JavascriptExtensions/Extras/Settings/MogCorpTools_settings.json`.
 
 These settings are all explained in the file itself so should be easy to grasp. Note you can enable/disable display of any of the dash elements in 'setElementsDisplayVisibility' to true/false.
 
 Just open that JSON up in a text editor and alter the settings to suit. Remember to save the settings file (just hit 'Save' or CTRL+S) and restart the dash for the settings to take effect.
 
 ## Layout, Editing and VR
-As mentioned earlier this dash was developed specifically to help VR users and while the main dash is packaged as a minimal application but it's easy enough to scale up to use in VR. To do this:
+This dash is presented in a minimalist style in order that users can adjust, move, show/hide elements as they see fit. As mentioned earlier this dash was developed specifically to help VR users and while the main dash is packaged as a minimal application but it's easy enough to scale up to use in VR. To do this:
 - click on the 'More' option on the right side of the 'MogCorp LMU Tools Bundle' in SimHub DashStudio
 - select 'Edit dashboard'
 - to scale up the dash size go to Dashboard/Dashboard properties and change the overall scale (I used 1920 x 1024 for my VR version of this):
