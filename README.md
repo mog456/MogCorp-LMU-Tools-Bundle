@@ -41,8 +41,10 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
 - Where remaining race time is within the max capacity of the vehicle, output will return an estimated nrg/fuel strat based on last 5 valid laps consumption
 - In cases where remaining race time is within the nrg/fuel capacity of the vehicle, output will also display live fuel/nrg, time and laps delta to race finish
 - Output displays a LED indicator that indicates the difference between your selected strategy (in game) and the estimated strategy, where GREEN = within 1.0 (units fuel/nrg%), RED = under estimate, ORANGE = over estimate.
-- Where race time remaining is within capacity of vehicle, the estimated strategy will also account for extra laps of nrg/fuel as defined in `MogCorpTools__settings.json` (see below for setting details).
+- Where race time remaining is within capacity of vehicle, the estimated strategy will also account for extra laps of nrg/fuel as defined in `MogCorpTools__settings.json`.
 - Output will also display a fuel/nrg warning (red background) indicator when current levels are below thresholds in `MogCorpTools__settings.json`.
+
+**(For details on editing the settings.json see [thsi more dtailed breakdown](##a-modular-dash))**
 
  # MogCorp CornerMajig
 A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
@@ -66,7 +68,6 @@ Displays stuff about the current session....
 
 # Extra Info
 ## A modular Dash
-
 **SETTINGS:** This bundle contains  an editable settings file that allows users to change the functionality of the tool. The settings can be found at: `../Program Files (x86)/SimHub/DashTemplates/MogCorp LMU Tools Bundle/JavascriptExtensions/Extras/Settings/MogCorpTools_settings.json`.
 
 These settings are all explained in the file itself so should be easy to grasp. Note you can enable/disable display of any of the dash elements in 'setElementsDisplayVisibility' to true/false.
