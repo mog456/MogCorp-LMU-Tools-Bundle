@@ -15,7 +15,7 @@ This bundle is meant to be modular; you can pick and choose which elements to us
 Should these tools prove useful then MogCorp will continue development towards offering these resources via a SimHub plugin.
 
 # Download and Install
-Download the latest release [here](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/releases/latest) and unzip it.
+Download the latest release (MogCorp LMU Tools Bundle.zip) [here](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/releases/latest) and unzip it.
 
 ***IMPORTANT*** After unzipping make sure to copy the file Redadeg.lmuDataPlugin.dll to your SimHub installation root dir.
 Usually found at: ```...\Program Files (x86)\SimHub\```
