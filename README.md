@@ -78,7 +78,9 @@ Just open that JSON up in a text editor and alter the settings to suit. Remember
 As mentioned earlier this dash was developed specifically to help VR users and while the main dash is packaged as a minimal application but it's easy enough to scale up to use in VR. To do this:
 - click on the 'More' option on the right side of the 'MogCorp LMU Tools Bundle' in SimHub DashStudio
 - select 'Edit dashboard'
-- to scale up the dash size go to Dashboard/Dashboard properties and change the overall scale (I used 1920 x 1024 for my VR version of this)
+- to scale up the dash size go to Dashboard/Dashboard properties and change the overall scale (I used 1920 x 1024 for my VR version of this):
+
+![Simhub Properties image](img/propertiesSimHub.png "Simhub Properties image")
 - you can now edit the Dash as you wish by dragging the individual elements into position.
 - I added a few other tools for relatives/leaderboard/map from this great bundle on [overtake.gg](https://www.overtake.gg/downloads/rf2-lmu-ams2-simhub-mmo-modern-multiclass-overlay-standings-relative-tires-radar.74112/)
 
