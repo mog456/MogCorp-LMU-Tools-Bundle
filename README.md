@@ -24,7 +24,7 @@ Once you have the plugin copied to the SimHub dir just double click 'MogCorp LMU
 
 Launch Simhub and make sure the 'Redadeg LMU Data plugin' is enabled by going to 'Add/Remove Features' and enabling it there. If you can't see the plugin in SimHub make sure you have copied the Redadeg.lmuDataPlugin.dll to your SimHub installation root dir. 
 
-![Enable PlugIn](img/enable%20redadeg.png "Enable Plugin")
+![Enable PlugIn](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/enable%20redadeg.png "Enable Plugin")
 
 You should now see the dashboard in SimHub's 'Dash Studio' tab and be able to launch it from there.
 
@@ -33,7 +33,7 @@ You should now see the dashboard in SimHub's 'Dash Studio' tab and be able to la
 ----
 
 # MogCorp StrategyThingy
-![Strategy Thingy](img/strategyComp.png "StrategyThingy")
+![Strategy Thingy](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/strategyComp.png "StrategyThingy")
 
 A live strategy display that tracks fuel/energy consumption over the previous 5 valid laps and suggests your next pit strategy. Display type (e.g. nrg/fuel etc) is automatically selected by vehicle class. Main functionality includes:
 
@@ -48,13 +48,13 @@ A live strategy display that tracks fuel/energy consumption over the previous 5 
 
  # MogCorp CornerMajig
 A brake/throttle trace overlay that allows users to analyse per corner performance in realtime on a per track basis. This tool keeps track of your performance (braking distance, min speed, max speed and time in corner) on a per corner basis compared with your performance on your best lap in the current session. Using built-in per track data users can get an idea of where time is being gained/lost in each corner.
-![CornerMajig Image](img/cornerMajig_ScreenShot.png "CornerMajig")
+![CornerMajig Image](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/cornerMajig_ScreenShot.png "CornerMajig")
 
 
 ***NOTE: For more info on the trackData.json and how to edit this file see [this more detailed breakdown...](#a-note-on-trackdatajson)***
 
 # MogCorp TyreFrippery
-![Tyre Frippery](img/TyreFrippery_02.png "TyreFrippery")
+![Tyre Frippery](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/TyreFrippery_02.png "TyreFrippery")
 
 Its a tyre widgety thing that displays info about those tyres including:
 - Temperature (IMO and overall)
@@ -62,7 +62,7 @@ Its a tyre widgety thing that displays info about those tyres including:
 - Pressures
 
 # MogCorp SessionInfoMaBob
-![SessionInfoMaBob](img/SessionInfoMaBob_01.png "SessionInfoMaBob")
+![SessionInfoMaBob](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/SessionInfoMaBob_01.png "SessionInfoMaBob")
 
 Displays stuff about the current session....
 
@@ -80,7 +80,7 @@ This dash is presented in a minimalist style in order that users can adjust, mov
 - select 'Edit dashboard'
 - to scale up the dash size go to Dashboard/Dashboard properties and change the overall scale (I used 1920 x 1024 for my VR version of this):
 
-![Simhub Properties image](img/propertiesSimHub.png "Simhub Properties image")
+![Simhub Properties image](https://github.com/mog456/MogCorp-LMU-Tools-Bundle/blob/main/img/propertiesSimHub.png "Simhub Properties image")
 - you can now edit the Dash as you wish by dragging the individual elements into position.
 - I added a few other tools for relatives/leaderboard/map from this great bundle on [overtake.gg](https://www.overtake.gg/downloads/rf2-lmu-ams2-simhub-mmo-modern-multiclass-overlay-standings-relative-tires-radar.74112/)
 
